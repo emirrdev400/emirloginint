@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, #4d2c91, #9e30c2);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: backgroundShift 10s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundShift{
+    0%{
+        background: linear-gradient(135deg, #4d2c91, #9e30c2);
+    }
+    100%{
+        background: linear-gradient(135deg, #1b1b2f, #9e30c2);
+    }
+    
+}
+
+.login-container{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 45px 35px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    width: 370px;
+    animation: popup 0.8s ease forwards;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.login-container:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes popup{
+    to{
+        transform : scale(1);
+        opacity: 1;
+    }
+}
+
+.login-container h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px #ffffff77;
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 28px;
+    transition: all 0.3s ease;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 12px 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    box-shadow: 0 0 0 transparent;
+}
+
+.input-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.login-btn{
+    width: 100%;
+    padding: 14px;
+    border: none; /* kenar çizgisi kaldırılır */
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+
+.bottom-text{
+    text-align: center;
+    color: #f1f1f1;
+    position: relative;
+    top: 25px;
+    font-size: 14px;
+}
