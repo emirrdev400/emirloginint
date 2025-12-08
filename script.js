@@ -15,7 +15,7 @@ loginbtn.addEventListener("click", function(){
     }
     
     // email format kontrolü
-    if(!emailValue.include("@")){
+    if(!emailValue.includes("@")){
         errorMsg.innerText = ("Geçerli bir email adresi girin @ eksik")
         return;
     }
