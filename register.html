@@ -13,24 +13,30 @@
         <h2>Kayıt ol</h2>
         <div class="input-group">
             <span class="input-icon">👤</span>
-            <input type="text" placeholder="Enter UserName" required>
+            <input type="text" placeholder="Enter UserName" id="UserName" required>
         </div>
         <div class="input-group">
             <span class="input-icon">📧</span>
-            <input type="email" placeholder="E-Mail" required> <!-- required boş bırakılmamasını sağlar -->
+            <input type="email" placeholder="E-Mail" id="regEmail" required>
+            <!-- required boş bırakılmamasını sağlar -->
         </div>
         <div class="input-group">
             <span class="input-icon">🔒</span>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" id="regPassword" required>
         </div>
         <div class="input-group">
             <span class="input-icon">🔏</span>
-            <input type="password" placeholder="Confirm Password" required>
+            <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
         </div>
-        <button class="login-btn">Kayıt ol</button>
+        <p id="reg_errorMsg" style="color: red; font-size: 10px; margin-top: 10px; margin-bottom: 10px;"></p>
+        <button class="login-btn" id="registerBtn">Kayıt ol</button>
         <div class="bottom-text">Hesabın var mı? <a href="index.html" style="color: #fff;
         text-decoration: underline;">Giriş yap</a></div>
     </div>
+
+
+
+    <script src="register.js"></script>
 </body>
 
 </html>
